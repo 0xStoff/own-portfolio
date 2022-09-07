@@ -5,6 +5,7 @@ import { CenterWrapper, ImageWrapper } from "./index.styles";
 import { Loader } from "../../styles/index.styles";
 
 import schemaThumb from "../../img/greifautomat/schema_thumb.gif";
+import Icon from "../../routes/Icon";
 
 const ModalContent = ({ closeModal, data, load }) => {
   return (

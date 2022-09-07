@@ -11,6 +11,7 @@ import iconForward from "../img/icons/next.svg";
 import styled from "styled-components";
 import { useEffect } from "react";
 import { useState } from "react";
+import Error404 from "./404";
 
 const iconLeft = {
   right: "50px",
@@ -113,6 +114,8 @@ export default function Layout() {
       />
       <Route path="/home" element={<Home />} />
       <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="*" element={<Error404 />} />
+      {/* <Route path="/404" element={<Error404 />} /> */}
     </Routes>
   );
 }

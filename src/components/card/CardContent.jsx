@@ -11,8 +11,8 @@ const CardContent = ({ data }) => (
     <TextWrapper>
       <Title style={padding}>{data.title}</Title>
       <Text style={padding}>
-        {data.description.length > 450
-          ? data.description.substring(0, 450) + "..."
+        {data.description.length > 400
+          ? data.description.substring(0, 400) + "..."
           : data.description}
       </Text>
     </TextWrapper>

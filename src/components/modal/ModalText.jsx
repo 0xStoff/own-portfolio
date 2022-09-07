@@ -29,10 +29,18 @@ const ModalText = ({ closeModal, data }) => {
         <Close onClick={closeModal} />
       </Styled.IconWrapper>
       <Title style={{ marginTop: 80 }}>{data.title}</Title>
-
       <br />
       <Text>{data.description}</Text>
       <br />
+      {data.link && (
+        <>
+          <a style={{ color: "white" }} href={data.link} target="_">
+            {data.link}
+          </a>
+          <br />
+          <br />
+        </>
+      )}
       {data.competence && data.competence.map((c) => <List key={c}>{c}</List>)}
     </Styled.ModalTextWrapper>
   );

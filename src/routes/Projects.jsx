@@ -102,8 +102,10 @@ const projectsData = [
   {
     id: 1,
     title: "Innovation Flow App",
-    description:
-      "Individuelle Praktische Arbeit für Brüggli Medien: Innovation Flow ist eine Feedback-Pinnwand für die Mitarbeiter von Brüggli Medien. Mitarbeiter können über diese Pinnwand Feedback zur Firma, Strategien, Prozessen, Kantine etc. abgeben.",
+    link: "http://innovation.stoeff.xyz",
+    description: `Individuelle Praktische Arbeit für Brüggli Medien: Innovation Flow ist eine Feedback-Pinnwand für die Mitarbeiter von Brüggli Medien. Mitarbeiter können über diese Pinnwand Feedback zur Firma, Strategien, Prozessen, Kantine etc. abgeben. 
+     Die App ist auf meinem persönlichen Server gehosted und kann darum angesehen werden. Dazu nutzt man entweder den Testuser (test@advery.ch; abc123), oder man legt einfach einen neuen User an (auch mit Fake-Mail möglich, keine Bestätigung notwendig).`,
+
     // url: komponentenBaum,
     competence: [
       "React",
