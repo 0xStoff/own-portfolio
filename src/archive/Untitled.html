@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p#cf7_controls {
+        text-align: center;
+        margin-top: 300px;
+      }
+      #cf7_controls span {
+        padding-right: 2em;
+        cursor: pointer;
+      }
+      #cf7 {
+        position: relative;
+        height: 281px;
+        width: 450px;
+        max-width: 450px;
+        margin: 0 auto 10px;
+      }
+      #cf7 img {
+        width: 400px;
+        position: absolute;
+        left: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+      }
+
+      #cf7 img.opaque {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="cf7" class="shadow">
+      <img class="opaque img" src="../img/greifautomat.png" />
+      <img src="../img/me.png" />
+      <img src="../img/innovationflow.png" />
+      <img src="../img/komponenten-baum.png" />
+    </div>
+    <p id="cf7_controls">
+      <span class="selected">Image 1</span>
+      <span>Image 2</span>
+      <span>Image 3</span>
+      <span>Image 4</span>
+    </p>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#cf7_controls").on("click", "span", function () {
+        $("#cf7 img").removeClass("opaque");
+
+        var newImage = $(this).index();
+
+        $("#cf7 img").eq(newImage).addClass("opaque");
+
+        $("#cf7_controls span").removeClass("selected");
+        $(this).addClass("selected");
+      });
+    });
+  </script>
+</html>

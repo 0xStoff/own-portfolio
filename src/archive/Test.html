@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="animation.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button").click(function () {
+          var buttonId = $(this).attr("id");
+          $("#modal-container").removeAttr("class").addClass(buttonId);
+          $("body").addClass("modal-active");
+        });
+
+        $("#modal-container").click(function () {
+          $(this).addClass("out");
+          $("body").removeClass("modal-active");
+          // $("#bg").removeClass("modal-background");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="modal-container">
+      <div class="modal-background" id="bg">
+        <div class="modal">
+          <h2>I'm a Modal</h2>
+          <p>Hear me roar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Modal Animations</h1>
+      <div class="buttons">
+        <div id="three" class="button">Uncovering</div>
+        <div id="four" class="button">Blow Up</div>
+        <br />
+        <div id="five" class="button">Meep Meep</div>
+        <div id="six" class="button">Sketch</div>
+        <div id="seven" class="button">Bond</div>
+      </div>
+    </div>
+  </body>
+</html>
