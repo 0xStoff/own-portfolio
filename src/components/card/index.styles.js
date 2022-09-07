@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const Card = styled.div`
   background-color: #121212;
   border-radius: 10px;
-  outline: 1px solid rgba(185, 185, 185, 0.3);
+  border: 1px solid rgba(185, 185, 185, 0.3);
   display: flex;
   height: 450px;
   // margin-bottom: 50px;
@@ -15,7 +15,7 @@ const Card = styled.div`
 
     mix-blend-mode: lighten;
     transition: opacity 0.5s ease-in-out;
-    // outline: 1px solid rgba(255, 255, 255, 0.3);
+    // border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   &:active {

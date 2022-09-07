@@ -5,7 +5,7 @@ import { CenterWrapper, ImageWrapper } from "./index.styles";
 import { Loader } from "../../styles/index.styles";
 
 import schemaThumb from "../../img/greifautomat/schema_thumb.gif";
-import Icon from "../../routes/Icon";
+import Icon from "../Icon";
 
 const ModalContent = ({ closeModal, data, load }) => {
   return (
@@ -20,12 +20,12 @@ const ModalContent = ({ closeModal, data, load }) => {
         )} */}
 
         {data.vid && (
-          <video controls>
+          <video style={{ width: "100%" }} controls autoPlay>
             <source src={data.vid} type="video/mp4" />
           </video>
         )}
         {data.imgs.map((img) => (
-          <img key={img} src={img} />
+          <img style={{ width: "100%" }} key={img} src={img} />
         ))}
       </ImageWrapper>
     </>

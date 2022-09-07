@@ -5,13 +5,14 @@ import Projects from "./Projects";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
 
-import IconNavigation from "./Icon";
+import IconNavigation from "../components/Icon";
 import iconBack from "../img/icons/arrow.svg";
 import iconForward from "../img/icons/next.svg";
 import styled from "styled-components";
 import { useEffect } from "react";
 import { useState } from "react";
 import Error404 from "./404";
+import Button from "../components/Button";
 
 const iconLeft = {
   right: "50px",
@@ -95,10 +96,24 @@ export default function Layout() {
                 <IconNavigation
                   direction="left"
                   name="home"
-                  onClick={() => navigate("/home")}
+                  onClick={() => {
+                    navigate("/home");
+                    // onMouseLeave();
+                  }}
                   // src={iconBack}
                   style={{ ...navStyle, ...iconLeft }}
                 />
+                {/* <Button
+                  title="home"
+                  destination="home"
+                  style={{ ...navStyle, ...iconRight }}
+                />
+
+                <Button
+                  title="about me"
+                  destination="aboutme"
+                  style={{ ...navStyle, ...iconRight }}
+                /> */}
                 <IconNavigation
                   direction="right"
                   name="about me"

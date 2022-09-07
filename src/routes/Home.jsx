@@ -7,10 +7,10 @@ import { NavButton, Text, Title } from "../styles/index.styles";
 import Button from "../components/Button";
 
 import styled, { keyframes, css } from "styled-components";
-import Typewriter from "./Typewriter";
+import Typewriter from "../components/Typewriter";
 import github from "../img/icons/github.svg";
 import notion from "../img/icons/notion.svg";
-import IconNavigation from "./Icon";
+import IconNavigation from "../components/Icon";
 
 const Wrapper = styled.div`
   animation: fadeIn 0.5s ease-in-out forwards;

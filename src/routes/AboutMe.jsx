@@ -48,7 +48,10 @@ const Wrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  // width: 50%;
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const padding = { padding: "10px 50px" };
@@ -65,7 +68,7 @@ const AboutMe = () => {
 };
 
 const About = () => (
-  <div>
+  <TextWrapper>
     <Title style={{ ...padding, marginTop: "150px" }}>
       Hey, das bin ich, de Christoph.
     </Title>
@@ -82,6 +85,6 @@ const About = () => (
       Sush gits nid viel über mich zsege. Bin 26gi, mag technik, tue gern
       longboaarde und liebs natürlich ziit mit gliichgsiinte zverbringe...
     </Text>
-  </div>
+  </TextWrapper>
 );
 export default AboutMe;

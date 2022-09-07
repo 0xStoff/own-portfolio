@@ -4,7 +4,7 @@ import { Title, Text, Subtitle, List } from "../../styles/index.styles";
 import icon from "../../img/others/download.svg";
 
 import Close from "./Close";
-import IconNavigation from "../../routes/Icon";
+import IconNavigation from "../Icon";
 
 const ModalText = ({ closeModal, data }) => {
   // console.log(data);

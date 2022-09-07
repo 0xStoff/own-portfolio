@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Button from "../components/Button";
 import { Title } from "../styles/index.styles";
 
 function Typewriter() {

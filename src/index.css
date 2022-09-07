@@ -2,6 +2,12 @@
   cursor: none;
 }
 
+/* @-moz-document url-prefix() {
+  * {
+    cursor: default;
+  }
+} */
+
 .blinking-cursor::after {
   content: "|";
   animation: blink 1s step-end infinite;

@@ -58,16 +58,20 @@ const Caption = styled.p`
 
 const IconNavigation = ({
   props: { tooltip, name, onClick, src, ...styles },
+  onMouseLeave,
 }) => {
   const [showTooltip, setShowTooltip] = useState(false);
-  const onMouseEnter = () => setShowTooltip(true);
-  const onMouseLeave = () => setShowTooltip(false);
+  const onMouseEnterTooltip = () => setShowTooltip(true);
+  const onMouseLeaveTooltip = () => setShowTooltip(false);
 
   return (
     <a
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      onClick={onClick}
+      onMouseEnter={onMouseEnterTooltip}
+      onMouseLeave={onMouseLeaveTooltip}
+      onClick={() => {
+        onMouseLeave();
+        onClick();
+      }}
       {...styles}
     >
       {src && <Icon src={src} />}

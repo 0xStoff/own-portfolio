@@ -12,24 +12,24 @@ const Dot = styled.div`
 
   border-radius: 100%;
   z-index: 999;
+
   pointer-events: none;
+
   transform: translate(-50%, -50%);
-  transition-duration: 150ms;
   transition-timing-function: ease-out;
-  will-change: width, height, transform, border;
+  transition-duration: 100ms;
+  will-change: width, height;
 
-  left: ${(props) => `${props.x}px`};
-  top: ${(props) => `${props.y}px`};
+  @-moz-document url-prefix() {
+    transition-duration: unset;
+  }
 
-  &${(props) =>
+  ${(props) =>
     props.cursorType &&
     `{
+     
     width: 50px;
     height: 50px;
-    transform: translate(-50%, -50%);
-    transition-duration: 150ms;
-    transition-timing-function: ease-out;
-    will-change: width, height, transform, border;
     mix-blend-mode: difference;
   }`}
 `;

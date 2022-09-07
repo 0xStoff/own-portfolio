@@ -66,8 +66,9 @@ const CloseIcon = styled.img`
 `;
 
 const ImageWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  // max-width: 100%;
   margin-top: 70px;
 `;
 
@@ -77,7 +78,7 @@ const Modal = styled.div`
   border-radius: 10px;
   width: 70%;
   height: 80%;
-  outline: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: scroll;
   position: fixed;
   top: 70px;
