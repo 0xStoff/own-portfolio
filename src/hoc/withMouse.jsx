@@ -8,7 +8,7 @@ export const withMouse = (Component) => (props) => {
   const onMouseLeave = () => cursorChangeHandler("");
   return (
     <div
-      style={{ width: "fit-content", height: "fit-content" }}
+      style={{ width: "fit-content", height: "fit-content", maxWidth: "100%" }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >

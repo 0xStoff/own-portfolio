@@ -1,5 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { Title } from "../styles/index.styles";
+import styled from "styled-components";
+
+const FirstText = styled.h1`
+  color: #fff;
+  font-size: 6em;
+  line-height: 1.2;
+  @media (max-width: 768px) {
+    font-size: 4em;
+  }
+`;
+
+const SecondText = styled.h1`
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.2;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+`;
 
 function Typewriter() {
   const first_text = "Christoph Mayer";
@@ -28,18 +46,14 @@ function Typewriter() {
 
   return (
     <>
-      <Title
-        style={{ fontSize: "6em" }}
-        className={text1 !== first_text && cursorClass}
-      >
+      <FirstText className={text1 !== first_text && cursorClass}>
         {text1}
-      </Title>
-      <Title
-        style={{ fontSize: "4em" }}
+      </FirstText>
+      <SecondText
         className={text1 === first_text && text2 !== second_text && cursorClass}
       >
         {text2}
-      </Title>
+      </SecondText>
     </>
   );
 }

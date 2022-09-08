@@ -22,7 +22,7 @@ const Text = styled.p`
 const List = styled.li`
   color: #fff;
   font-size: 1em;
-  text-align: justify;
+  text-align: left;
 `;
 
 const Title = styled.h1`

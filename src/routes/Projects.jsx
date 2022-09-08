@@ -37,7 +37,7 @@ import dokuGreifer from "../img/greifautomat/IDPA_Dokumentation.pdf";
 import { createRef } from "react";
 
 const Wrapper = styled.div`
-  margin-top: 100px;
+  margin-top: 150px;
 `;
 
 function Projects() {

@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -r ./build/* /var/www/stoeff.xyz && rm -R ./build/*",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

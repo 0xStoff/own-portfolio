@@ -1,5 +1,6 @@
 * {
   cursor: none;
+  hyphens: auto;
 }
 
 /* @-moz-document url-prefix() {

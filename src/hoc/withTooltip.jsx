@@ -46,7 +46,6 @@ const Tooltip = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  hyphens: auto;
   justify-content: space-between;
 
   // padding: 30px;

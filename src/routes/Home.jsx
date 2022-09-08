@@ -24,6 +24,10 @@ const Wrapper = styled.div`
     }
   }
   padding-left: 150px;
+
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
   width: fit-content;
 `;
 

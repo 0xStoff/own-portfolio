@@ -99,7 +99,7 @@ const Modal = styled.div`
 const ModalTextWrapper = styled.div`
   padding: 1em 5em;
   @media (max-width: 768px) {
-    padding: 1em 4em;
+    padding: 1em 3em;
   }
 `;
 

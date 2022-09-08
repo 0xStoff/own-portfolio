@@ -6,7 +6,6 @@ const Card = styled.div`
   border: 1px solid rgba(185, 185, 185, 0.3);
   display: flex;
   height: 450px;
-  // margin-bottom: 50px;
   overflow: hidden;
   width: 800px;
 
@@ -15,12 +14,10 @@ const Card = styled.div`
 
     mix-blend-mode: lighten;
     transition: opacity 0.5s ease-in-out;
-    // border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   &:active {
     background-color: rgba(31, 27, 36, 1);
-
     mix-blend-mode: screen;
     transition: opacity 0.5s ease-in-out;
   }
@@ -98,7 +95,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   height: auto;
   justify-content: center;
-  padding: 3em;
+  padding: 10px;
 `;
 
 const pulsedark = keyframes` {
