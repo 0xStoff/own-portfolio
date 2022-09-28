@@ -5,6 +5,10 @@ import { MouseContext } from "../context/mouseContext";
 import styled from "styled-components";
 
 const Dot = styled.div`
+  // hide on touch device
+  @media (pointer: coarse) {
+    display: none;
+  }
   position: fixed;
   width: 15px;
   height: 15px;

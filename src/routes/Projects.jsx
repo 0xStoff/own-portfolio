@@ -28,6 +28,7 @@ import native2 from "../img/courses/native2.png";
 import native from "../img/courses/native.png";
 
 import ecdl from "../img/ecdl.jpg";
+import ochsen from "../img/ochsen.png";
 
 import broschuere from "../img/design/broschuere.pdf";
 import cicd from "../img/design/cicd.pdf";
@@ -143,12 +144,25 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Kurse",
+    title: "Ochsen Beringen",
     description:
-      "Als ich Javascript und React für mich entdeckt hatte, habe ich mich viel durch Youtube, Online-Artikel und Kurse weitergebildet. Ich habe dadurch alle Grundlagen rundum React und Javascript gelernt. Natürlich bilde ich mich auch stets weiter, so habe ich kürzlich meine erste React Native App umgesetzt. Ausserdem habe ich schon ins Backend mit NodeJs oder in ganz andere Themen wie Python geschnuppert. Es steht noch einiges auf meiner To-Do List.",
-    // url: mockup,
-    competence: ["React", "Bootstrap CSS", "Strapi", "React Native"],
-    imgs: [vidly0, vidly1, vidly2, native],
+      "Als kleines Nebenprojekt habe ich die Website des Restaurant Ochsen Beringen erstellt und Pflege diese auch regelmässig. Dies ermöglichte es mir, erste Erfahrungen auf einer Serverumgebung, oder aber mit SEO zu sammeln. Das Projekt wurde natürlich wieder mit React umgesetzt.",
+    link: "https://ochsen-beringen.ch/",
+    competence: [
+      "React",
+      "Strapi",
+      "Frontend und Backend auf verschiedenen Servern",
+      "Umgang mit FTP",
+      "SEO und Google Console",
+      "Umgang mit Google API",
+      "API erstellen und lesen",
+      "DNS und Domain konfiguration",
+      "Nginx Proxying",
+      "SSL konfiguration",
+      "Design",
+    ],
+    // pdf: ecdl,
+    imgs: [ochsen],
   },
   {
     id: 4,
@@ -168,5 +182,14 @@ const projectsData = [
     // competence: ["Konzeption und Aufbau von Testschaltungen"],
     // pdf: ecdl,
     imgs: [ecdl],
+  },
+  {
+    id: 6,
+    title: "Kurse",
+    description:
+      "Als ich Javascript und React für mich entdeckt hatte, habe ich mich viel durch Youtube, Online-Artikel und Kurse weitergebildet. Ich habe dadurch alle Grundlagen rundum React und Javascript gelernt. Natürlich bilde ich mich auch stets weiter, so habe ich kürzlich meine erste React Native App umgesetzt. Ausserdem habe ich schon ins Backend mit NodeJs oder in ganz andere Themen wie Python geschnuppert. Es steht noch einiges auf meiner To-Do List.",
+    // url: mockup,
+    competence: ["React", "Bootstrap CSS", "Strapi", "React Native"],
+    imgs: [vidly0, vidly1, vidly2, native],
   },
 ];
