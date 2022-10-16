@@ -7,7 +7,7 @@ import ModalContent from "../components/modal/ModalContent";
 import styled from "styled-components";
 
 import img0 from "../img/innovation/innovationflow.png";
-import greifer from "../img/greifautomat/greifautomat.png";
+import greifer from "../img/greifautomat/greifautomat.jpg";
 import elektronik from "../img/greifautomat/elektronik.png";
 import schema from "../img/greifautomat/schema_thumb.gif";
 // import schema from "../img/greifautomat/schema.png";
