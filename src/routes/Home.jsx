@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { withMouse } from "../hoc/withMouse";
+import React from "react";
 
-import { useNavigate } from "react-router-dom";
-import { MouseContext } from "../context/mouseContext";
-import { NavButton, Text, Title } from "../styles/index.styles";
 import Button from "../components/Button";
 
 import styled, { keyframes, css } from "styled-components";

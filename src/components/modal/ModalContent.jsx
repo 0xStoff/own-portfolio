@@ -1,11 +1,7 @@
 import React from "react";
 
 import ModalText from "./ModalText";
-import { CenterWrapper, ImageWrapper } from "./index.styles";
-import { Loader } from "../../styles/index.styles";
-
-import schemaThumb from "../../img/greifautomat/schema_thumb.gif";
-import Icon from "../Icon";
+import { ImageWrapper } from "./index.styles";
 
 const ModalContent = ({ closeModal, data, load }) => {
   return (

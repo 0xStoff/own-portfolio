@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import { default as Card } from "../components/card/Cards";
 import { default as Modal } from "../components/modal/Modal";
@@ -6,25 +6,19 @@ import ModalContent from "../components/modal/ModalContent";
 
 import styled from "styled-components";
 
-import img0 from "../img/innovation/innovationflow.png";
 import greifer from "../img/greifautomat/greifautomat.jpg";
 import elektronik from "../img/greifautomat/elektronik.png";
 import schema from "../img/greifautomat/schema_thumb.gif";
 // import schema from "../img/greifautomat/schema.png";
 import doku from "../img/greifautomat/idpa_doku.png";
-import img3 from "../img/others/me.png";
 import komponentenBaum from "../img/innovation/komponenten-baum.png";
 import mockup from "../img/innovation/MOCKUP.png";
-import login from "../img/innovation/login.png";
 import dokuInnovation from "../img/innovation/IPA_Dokumentation_final.pdf";
 import phpVid from "../img/phpIct/phpvid.mp4";
 import vorschau from "../img/phpIct/vorschau.png";
 import vidly0 from "../img/courses/vidly0.png";
 import vidly1 from "../img/courses/vidly1.png";
 import vidly2 from "../img/courses/vidly2.png";
-import native0 from "../img/courses/native0.png";
-import native1 from "../img/courses/native1.png";
-import native2 from "../img/courses/native2.png";
 import native from "../img/courses/native.png";
 
 import ecdl from "../img/ecdl.jpg";
@@ -35,7 +29,6 @@ import cicd from "../img/design/cicd.pdf";
 import plakat from "../img/design/plakat.png";
 
 import dokuGreifer from "../img/greifautomat/IDPA_Dokumentation.pdf";
-import { createRef } from "react";
 
 const Wrapper = styled.div`
   margin-top: 150px;

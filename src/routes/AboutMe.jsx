@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import me from "../img/others/me.png";
-import ecdl from "../img/others/ECDL_Expert.png";
-import efz from "../img/others/efz_Page_1.png";
-import bms from "../img/others/bms_Page_1.png";
 import { Text, Title } from "../styles/index.styles";
 
 const Image = styled.img`

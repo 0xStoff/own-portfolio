@@ -6,13 +6,10 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 
 import IconNavigation from "../components/Icon";
-import iconBack from "../img/icons/arrow.svg";
-import iconForward from "../img/icons/next.svg";
 import styled from "styled-components";
 import { useEffect } from "react";
 import { useState } from "react";
 import Error404 from "./404";
-import Button from "../components/Button";
 
 const iconLeft = {
   right: "50px",
