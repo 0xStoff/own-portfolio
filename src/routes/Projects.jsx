@@ -8,8 +8,7 @@ import styled from "styled-components";
 
 import greifer from "../img/greifautomat/greifautomat.jpg";
 import elektronik from "../img/greifautomat/elektronik.png";
-import schema from "../img/greifautomat/schema_thumb.gif";
-// import schema from "../img/greifautomat/schema.png";
+import schema from "../img/greifautomat/schema.png";
 import doku from "../img/greifautomat/idpa_doku.png";
 import komponentenBaum from "../img/innovation/komponenten-baum.png";
 import mockup from "../img/innovation/MOCKUP.png";
