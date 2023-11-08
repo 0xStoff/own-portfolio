@@ -79,6 +79,7 @@ function Home({ ...cursorProps }) {
 
         {/* <img style={{ marginRight: 12 }} src={github} />
         <img src={notion} /> */}
+
         <Button destination="projects" title="Projects." />
         <Button destination="aboutme" title="About Me." />
       </Slide>
