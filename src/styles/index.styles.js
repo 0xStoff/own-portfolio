@@ -4,7 +4,6 @@ const NavButton = styled.h2`
   color: #fff;
   font-size: 2em;
   line-height: 0.8;
-  // padding: 10px;
 `;
 
 const Subtitle = styled.h2`
