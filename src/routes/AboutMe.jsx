@@ -79,7 +79,7 @@ const About = () => (
       frameworks); lueged defür doch au no de Notion-Link uf de Startsiite ah.
     </Text>
     <Text style={padding}>
-      Sush gits nid viel über mich zsege. Bin 26gi, mag technik, tue gern
+      Sush gits nid viel über mich zsege. Bin 28gi, mag technik, tue gern
       longboaarde und liebs natürlich ziit mit gliichgsiinte zverbringe...
     </Text>
   </TextWrapper>
