@@ -79,8 +79,9 @@ function Home({...cursorProps}) {
             />
         </div>
 
+        <Button destination="aboutme" title="About Me." setShowTypewriter={setShowTypewriter}/>
         <Button destination="projects" title="Projects." setShowTypewriter={setShowTypewriter}/>
-        <Button destination="aboutme" title="About Me." setShowTypewriter={setShowTypewriter}/></>
+    </>
 
     return (<Wrapper>
         {showTypewriter ? <Typewriter/> : <>
